@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Solving TicTacToe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <table id="nav">
+    <tr>
+      <td id="nava"><a href="index.html" id="navb">home</a></td>
+      <td id="nava"><a id="selected">first move</a></td>
+      <td id="nava"><a href="outcomes.html" id="navb">outcomes</a></td>
+      <td id="nava"><a href="data.html" id="navb">data</a></td>
+	  <td id="nava"><a href="play.html" id="navb">play</a></td>
+    </tr>
+  </table>
+  <p>Due to the fact that the board is a square, there are only 3 main starting positions:<strong> middle</strong>, <strong>corner</strong>, and <strong>edge</strong></p>
+<h1>middle</h1>
+<p>This is most common choice by most tictactoe players because there are more possible rows. however, unless the opponent is chosing squares at random, this is not the best way to rate a starting position.</p>
+<img src="m.jpg">
+<p>If the opponent goes in any of the highlighted squares, you can force a win. This gives us 4/8 squares, which isn't the best.</p>
+<h1>edge</h1>
+<p>This is, by far, the worst starting position. As far as I'm aware, there is absolutely no way to force a win right off the bat.</p>
+<h1>corner</h1>
+<p>And, of course, I saved the best for last. Going in a corner rewards you with a whopping 7/8 chance to win the game. Any move but the center results in a loss for the opponent if played correctly.</p>
+<img src="c.jpg">
+</body>
+</html>
