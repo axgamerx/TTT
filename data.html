@@ -1,32 +1,34 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-<head>
-  <title>Solving TicTacToe</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <table id="nav">
-    <tr>
-      <td id="nava"><a href="index.html" id="navb">home</a></td>
-      <td id="nava"><a href="firstmove.html" id="navb">first move</a></td>
-      <td id="nava"><a href="outcomes.html" id="navb">outcomes</a></td>
-      <td id="nava"><a id="selected">data</a></td>
-      <td id="nava"><a href="play.html" id="navb">play</a></td>
-    </tr>
-  </table>
-  <ol>
-    <li>Easy<ul><li>Completely random moves, as long as the move is legal</li></ul></li>
-    <li>Medium<ul><li>Will block obvious rows, but doesn't think ahead</li></ul></li>
-    <li>Hard<ul><li>Optimized playstyle, cannot lose</li></ul></li>
-  </ol>
- <table id="data">
-    <tr><td rowspan="2" colspan="2"></td><th colspan="4" id="op">opponent</th></tr>
-    <tr><th>easy</th><th>medium</th><th>hard</th></tr>
-    <tr><th rowspan="4" id="you">you</th><th>easy</th><td><p>win: 57%</p> &nbsp loss:30%</td><td><p>win: 6%</p> &nbsp loss:68%</td><td><p>win: 0%</p> &nbsp loss:80%</td></tr>
-    <tr><th>normal</th><td><p>win: 90%</p> &nbsp loss:2%</td><td><p>win: 32%</p> &nbsp loss:17%</td><td><p>win: 0%</p> &nbsp loss:16%</td></tr>
-    <tr><th>hard</th><td><p>win: 98%</p> &nbsp loss:0%</td><td><p>win: 76%</p> &nbsp loss:0%</td><td><p>win: 0%</p> &nbsp loss:0%</td></tr>
-  </table>  
-  <a href="https://blog.ostermiller.org/tic-tac-toe-strategy/">source</a>
-  <p>By looking at the <strong>medium</strong> vs <strong>hard</strong> data, we can see that as player 1, we have a <strong>76%</strong> chance of winning. However, when going second, this changes to <strong>16%</strong>, which is the exact same as 2 medium players playing. This is because, as player 2, there are not many ways to force a win.</p>
-</body>
+  <head>
+    <title>Solving TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <table id="nav">
+      <tr>
+        <td id="nava"><a href="index.html" id="navb">home</a></td>
+        <td id="nava"><a href="firstmove.html" id="navb">first move</a></td>
+        <td id="nava"><a href="outcomes.html" id="navb">outcomes</a></td>
+        <td id="nava"><a id="selected">data</a></td>
+        <td id="nava"><a href="play.html" id="navb">play</a></td>
+      </tr>
+    </table>
+    <ol>
+      <li>Easy<ul><li>Completely random moves, as long as the move is legal</li></ul></li>
+      <li>Medium<ul><li>Will block obvious rows, but doesn't think ahead</li></ul></li>
+      <li>Hard<ul><li>Optimized playstyle, cannot lose</li></ul></li>
+    </ol>
+    <table id="data">
+      <tr><td rowspan="2" colspan="2"></td><th colspan="4" id="op">P2</th></tr>
+      <tr><th>easy</th><th>medium</th><th>hard</th></tr>
+      <tr><th rowspan="4" id="you">P1</th><th>easy</th><td><p>win:57%</p> loss:30%</td><td><p>win:6%</p> loss:68%</td><td><p>win:0%</p> loss:80%</td></tr>
+      <tr><th>normal</th><td><p>win:90%</p> loss:2%</td><td><p>win:32%</p> loss:17%</td><td><p>win:0%</p> loss:16%</td></tr>
+      <tr><th>hard</th><td><p>win:98%</p> loss:0%</td><td><p>win:76%</p> loss:0%</td><td><p>win:0%</p> loss:0%</td></tr>
+    </table>  
+    <a href="https://blog.ostermiller.org/tic-tac-toe-strategy/">source</a>
+    <p>By looking at the <strong>medium</strong> vs <strong>hard</strong> data, we can see that as player 1, we have a <strong>76%</strong> chance of winning. However, when going second, this changes to <strong>16%</strong>, which is the exact same as 2 medium players playing. This is because, as player 2, there is no way to force a win on the first move, meaning your opponent would have to make a very big mistake in order to win.</p>
+    <table>
+    </table>
+  </body>
 </html>
